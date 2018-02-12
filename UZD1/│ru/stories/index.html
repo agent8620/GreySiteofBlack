@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+	<meta charset="utf-8">
+	<title>Uzdevums №1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" >
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../lib/js/calendar.js"></script>
+
+
+</head>
+<body>
+	<section class="main">
+		<div class="header">
+
+			<a href="./index.html"><img src="../../img/logo.png"> </a>
+			<span>
+				<a href="../../│en/stories/">ENG</a>
+				<a href="../../│lv/stories/">LVU</a>
+			</span>
+			<h1>FAQ</h1>
+		</div>
+
+		<nav style="background-color: #C0C0C0;">
+			<ul class="menu1">
+				<li><a href="../">Главная</a></li>
+				<li><a href="../stories/">Истории</a></li>
+				<li><a href="../gallery/">Галерея</a></li>
+				<li><a href="../form/">Анкета</a></li>
+				<li><a href="../contacts/">Контакты</a></li>
+				<li><a href="../faq/">FAQ</a></li>
+			</ul>
+		</nav>
+
+		<div class="MM">
+			<aside class="sideL">
+				<div class="titleS">
+					<div>
+						Saraksti.tk
+					</div>
+						<a href="http://saraksti.tk/" target="_blank"><img src="../img/reklamaRU.gif" width="180px"" /></img></a>
+					
+				</div>		
+				<div class="titleS">
+					<div>
+						<a href="">Выше</a>
+					</div>
+				</div> 		
+			</aside>
+			<main>
+				<h2>Символическое значение серого цвета</h2>
+				<p>Серый также означает власть. Существует даже особое выражение, означающее человека, обладающего огромной скрытой властью, - серый кардинал. Во времена правления одного из французских королей наибольшая власть при дворе принадлежала кардиналу Ришелье. Однако лишь избранные знали, что Ришелье – марионетка в руках более могущественной фигуры, монаха Джозефа. Из-за его серой рясы он получил прозвище серый кардинал. Так же, как было сказано выше, одежду серого цвета в Средние века в основном носили знатные люди, обладающие большой властью.</p>
+				<p>Среди негативных значений серого цвета можно назвать тусклость, нежелание выделяться из толпы, скуку. Людей, предпочитающих сливаться с окружающими вместо того, что раскрыть свое уникальное «я», называют серыми мышками. Серый также иногда означает примитивность, низкое происхождение. К примеру, в Российской Империи существовало выражение «серый мужичок», которое обозначало простолюдина.</p>
+				<h2>Физиологическое воздействие</h2>
+				<p>Серый цвет помогает сосредоточиться для решения важных задач. Однако стоит помнить, для того, чтобы этот оттенок оказался полезным, это нужно применять в небольших количествах. Излишек серого цвета может спровоцировать депрессию. Его успокаивающее действие превращается в угнетение.</p>
+				<h2>Психологическое воздействие</h2>	
+				<p>Серый цвет помогает справиться со слишком сильными эмоциями любого рода. Ведь бывает так, что и неожиданная, чрезмерная радость выбивает из рабочей колеи так же, как и горе. Успокаивая чувства, он усиливает интеллект. Серый цвет делает человека более прагматичным и уравновешенным. Помогает не идти на поводу у собственных эмоций, а взглянуть на проблему с ясной головой. Поэтому его хорошо использовать во время серьезных умственных нагрузок, например во время экзаменов.</p>
+				<h2>Термины</h2>
+				<p>
+					<il >
+						<li>серая мышь — так называют мелкого незаметного человека, маленький человек </li>
+						<li>серый кардинал — так называют влиятельного человека, действующего негласно</li>
+						<li>серая капуста — наружные листья кочана</li>
+						<li>серая публика — народ, простонародье</li>
+						<li>серая масса — инертное безличное общество</li>
+						<li>серая кость — неодобрительно о человеке низкого происхождения; комбинация фразеологических оборотов «серая масса» и «белая кость»</li>
+						<li>серой мужичок — лапотник, простой, рабочий</li>
+						<li>серая погода — пасмурная</li>
+						<li>серые шинели — о солдатах: солдаты царской армии были одеты в шинели мышино-серого цвета</li>
+						<li>серая скотинка — о солдатах в дореволюционной России </li>
+					</il>
+				</p>
+			</main>
+			<aside class="sideR">
+
+				<div class=titleS>
+					<div>
+						Календарь
+					</div>
+							<table id="calendar2">
+							  <thead>
+							    <tr><td>‹<td colspan="5"><td>›
+							    <tr><td>Пон<td>Вто<td>Сре<td>Чет<td>Пят<td>Суб<td>Вос
+							  <tbody>
+							</table>
+
+							<script>
+
+							Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth(),'ru');
+							// переключатель минус месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1,'ru');
+							}
+							// переключатель плюс месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1,'ru');
+							}
+							</script>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						Расписание
+					</div>
+						<a href="http://77.38.183.197/Saraksts" target="_blank"><img src="../../img/Saraksts.png" width="140px"" /></img></a>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						<a href="">Выше</a>
+					</div>
+					
+				</div>
+
+
+			</aside>
+		</div>
+
+		<footer><a href="http://77.38.183.197/sergej/TT/">© Sergy 2018</a></footer>
+	</section>
+
+
+</body>
+</html>
+
+<!--https://yadi.sk/d/Dnxo3WK83Rikyg-->

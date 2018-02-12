@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang = "lvu">
+<head>
+	<meta charset="utf-8">
+	<title>Uzdevums №1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" >
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../lib/js/calendar.js"></script>
+
+
+</head>
+<body>
+	<section class="main">
+		<div class="header">
+
+			<a href="./index.html"><img src="../../img/logo.png"> </a>
+			<span>
+				<a href="../../│ru/gallery/13.html">RUS</a>
+				<a href="../../│en/gallery/13.html">ENG</a>
+			</span>
+			<h1>Galerija</h1>
+		</div>
+
+		<nav style="background-color: #C0C0C0;">
+			<ul class="menu1">
+				<li><a href="../">Māja</a></li>
+				<li><a href="../stories/">Stāsti</a></li>
+				<li><a href="../gallery/">Galerija</a></li>
+				<li><a href="../form/">Anketa</a></li>
+				<li><a href="../contacts/">Kontakti</a></li>
+				<li><a href="../faq/">FAQ</a></li>
+			</ul>
+		</nav>
+
+		<div class="MM">
+
+
+			<aside class="sideL">
+
+
+				<div class="titleS">
+					<div>
+						<a href="./">Galerijas</a>
+					</div>
+						 <ol>
+						 	<p>
+						   <li><a href="./10.html">Foto galerija</a>
+						    <ol>
+						     <li> <a href="./11.html">Krāsu kombinācijas</a> </li>
+						     <li> <a href="./12.html">Krāsu nosaukumi</a> </li>
+						     <li><a href="./13.html">Dzīvnieki</a></li>
+						     <li><a href="./14.html">Cilvēki</a></li>
+						    </ol>
+						   </li>
+						   </p>	
+						   <p>
+						   <li><a href="./20.html">Video galerija</a>
+						    <ol>
+						     <li><a href="./21.html">Mūzika</a></li>
+						     <li><a href="./22.html">Citi</a></li>
+						    </ol>
+						   </li>
+						  </ol>		
+						  </p>			
+				</div>	
+
+				<div class="titleS">
+					<div>
+						Saraksti.tk
+					</div>
+						<a href="http://saraksti.tk/" target="_blank"><img src="../img/reklamaLV.gif" width="180px"" /></img></a>
+					
+				</div>		
+				<div class="titleS">
+					<div>
+						<a href="">Uz augšu</a>
+					</div>
+				</div> 	
+
+
+
+			</aside>
+			<main style="text-align: center;">
+				<h2>Fotogrāfijas</h2>
+				<a href="../../img/Wolf.jpg" target="_blank"><img src="../../gallery/Wolf.jpg" height="420px"></a>
+				<a href="../../img/Wolf2.jpg" target="_blank"><img src="../../gallery/Wolf2.jpg" height="420px"></a>
+			</main>
+
+			<aside class="sideR">
+
+				<div class=titleS>
+					<div>
+						Kalendārs
+					</div>
+							<table id="calendar2">
+							  <thead>
+							    <tr><td>‹<td colspan="5"><td>›
+							    <tr><td>Prm<td>Otr<td>Tre<td>Cet<td>Pie<td>Ses<td>Svē
+							  <tbody>
+							</table>
+
+							<script>
+
+							Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth(),'lv');
+							// переключатель минус месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1,'lv');
+							}
+							// переключатель плюс месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1),'lv';
+							}
+							</script>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						Saraksts
+					</div>
+						<a href="http://77.38.183.197/Saraksts" target="_blank"><img src="../../img/Saraksts.png" width="140px"" /></img></a>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						<a style="padding: 10px 40px " href="">Uz augšu</a>
+					</div>
+					
+				</div>
+
+
+			</aside>
+		</div>
+
+		<footer><a href="http://77.38.183.197/sergej/TT/">© Sergy 2018</a></footer>
+	</section>
+
+
+</body>
+</html>
+
+<!--https://yadi.sk/d/Dnxo3WK83Rikyg-->

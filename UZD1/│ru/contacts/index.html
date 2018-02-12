@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+	<meta charset="utf-8">
+	<title>Uzdevums №1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" >
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../lib/js/calendar.js"></script>
+
+
+</head>
+<body>
+	<section class="main">
+		<div class="header">
+
+			<a href="./index.html"><img src="../../img/logo.png"> </a>
+			<span>
+				<a href="../../│en/contacts/">ENG</a>
+				<a href="../../│lv/contacts/">LVU</a>
+			</span>
+			<h1>Контакты</h1>
+		</div>
+
+		<nav style="background-color: #C0C0C0;">
+			<ul class="menu1">
+				<li><a href="../">Главная</a></li>
+				<li><a href="../stories/">Истории</a></li>
+				<li><a href="../gallery/">Галерея</a></li>
+				<li><a href="../form/">Анкета</a></li>
+				<li><a href="../contacts/">Контакты</a></li>
+				<li><a href="../faq/">FAQ</a></li>
+			</ul>
+		</nav>
+
+		<div class="MM">
+			<aside class="sideL">
+				<div class="titleS">
+					<div>
+						Saraksti.tk
+					</div>
+						<a href="http://saraksti.tk/" target="_blank"><img src="../img/reklamaRU.gif" width="180px"" /></img></a>
+					
+				</div>		
+				<div class="titleS">
+					<div>
+						<a href="">Выше</a>
+					</div>
+				</div> 		
+			</aside>
+			<main>
+				<div>
+
+					<div style="float: right; padding: 15px 50px 0px 0px;">
+						<img src="https://pp.userapi.com/c638119/v638119038/385d7/VMknEZbPzZw.jpg" height="150">
+						<p><strong>Ник: </strong> <i>agent8620</i></p>
+						<p><strong>Имя: </strong> <i>Sergejs</i></p>
+						<p><strong>Группа: </strong> <i>D3-2</i></p>
+						<p><strong>Почта:</strong> <i>seza8620@gmail.com</i></p>
+						<p><strong>Youtube:</strong> <i>agent8620</i></p>
+						<p><strong>Twitch:</strong> <i>agent8620</i></p>
+						<p><strong style="color: blue">VK: </strong> <i><a target="new" href="https://vk.com/agent8620_black_star_seza4" style="text-decoration: none; color: black;">Сергий Леденой</a></i></p>
+					</div>
+
+					<div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21817207.9647138!2d4.126400089044286!3d48.125022274837065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2slv!4v1517382663984" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					
+				</div>
+			</main>
+			<aside class="sideR">
+
+				<div class=titleS>
+					<div>
+						Календарь
+					</div>
+							<table id="calendar2">
+							  <thead>
+							    <tr><td>‹<td colspan="5"><td>›
+							    <tr><td>Пон<td>Вто<td>Сре<td>Чет<td>Пят<td>Суб<td>Вос
+							  <tbody>
+							</table>
+
+							<script>
+
+							Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth(),'ru');
+							// переключатель минус месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1,'ru');
+							}
+							// переключатель плюс месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1,'ru');
+							}
+							</script>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						Расписание
+					</div>
+						<a href="http://77.38.183.197/Saraksts" target="_blank"><img src="../../img/Saraksts.png" width="140px"" /></img></a>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						<a href="">Выше</a>
+					</div>
+					
+				</div>
+
+
+			</aside>
+		</div>
+
+		<footer><a href="http://77.38.183.197/sergej/TT/">© Sergy 2018</a></footer>
+	</section>
+
+
+</body>
+</html>
+
+<!--https://yadi.sk/d/Dnxo3WK83Rikyg-->

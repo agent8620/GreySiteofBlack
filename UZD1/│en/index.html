@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+	<meta charset="utf-8">
+	<title>Uzdevums №1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico" >
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="../lib/js/calendar.js"></script>
+
+</head>
+<body>
+	<section class="main">
+		<div class="header">
+
+			<a href="http://77.38.183.197/sergej/TT/UZD1/"><img src="../img/logo.png"> </a>
+			<span>
+				<a href="../│ru">RUS</a>
+				<a href="../│lv">LVU</a>
+			</span>
+			<h1>Main_Page</h1>
+		</div>
+
+		<nav style="background-color: #C0C0C0;">
+			<ul class="menu1">
+				<li><a href="./">Main</a></li>
+				<li><a href="./stories/">Stories</a></li>
+				<li><a href="./gallery/">Gallery</a></li>
+				<li><a href="./form/">Form</a></li>
+				<li><a href="./contacts/">Contacts</a></li>
+				<li><a href="./faq/">FAQ</a></li>
+			</ul>
+		</nav>
+
+		<div class="MM">
+			<aside class="sideL">
+				<div class="titleS">
+					<div>
+						Saraksti.tk
+					</div>
+						<a href="http://saraksti.tk/" target="_blank"><img src="./img/reklamaEN.gif" width="180px"" /></img></a>
+					
+				</div>		
+				<div class="titleS">
+					<div>
+						<a href="">Up</a>
+					</div>
+				</div> 		
+			</aside>
+			<main>
+				<h2>The color</h2>
+				<p><strong>Gray</strong> is a cool, neutral, and balanced color. The color gray is an emotionless, moody color that is typically associated with meanings of dull, dirty, and dingy, as well as formal, conservative, and sophisticated.</p>
+				<p><strong>The color gray</strong> is a timeless and practical color that is often associated with loss or depression. Dark, charcoal gray communicates some of the strength and mystery of black. It is a sophisticated color that lack the negativity of the color black. Light grays can carry some of the attributes of the color white.</p>
+				<p><span id="more-3438"></span></p>
+				<p><strong>The gray color</strong> affects the mind and body by causing unsettling feelings. Light grays are feminine in nature, while dark grays are masculine in nature.</p>
+				<p><strong>Other meanings associated with the color gray:</strong></p>
+				<ul>
+				<li>The phrase <em>“gray matter”</em> refers to smarts, intelligence, brains, and intellect.</li>
+				<li>The saying <em>“gray power”</em> is used in reference to the power of the elderly or senior citizens.</li>
+				<li>The term <em>“gray page”</em> is a text-heavy page with very little contrast or white space.</li>
+				<li>The expression <em>“gray-hair”</em> is sometimes used to refer to an elderly person.</li>
+				<li>The phrase <em>“gray water”</em> refers to dirty water such as water that has been drained from a bathtub or kitchen sink.</li>
+				</ul>
+				<p><strong>Additional words that represent different shades, tints, and values of the color gray:</strong> charcoal, slate, iron gray, ashen, lead, mousy, gunmetal, silver, dove gray, powder grey, oyster, pearl, taupe, sere, Payne&#8217;s gray.</p>	
+
+
+				<p><strong>I like this color, because this is also my name. </strong></p>		
+				<p>My name is Sergy (<em>Sergy -> Seryj -> Grey (Gray) </em>). </p>
+			</main>
+			<aside class="sideR">
+
+				<div class=titleS>
+					<div>
+						Calendar
+					</div>
+							<table id="calendar2">
+							  <thead>
+							    <tr><td>‹<td colspan="5"><td>›
+							    <tr><td>Mon<td>Tue<td>Wed<td>Thu<td>Fri<td>Sat<td>Sun
+							  <tbody>
+							</table>
+
+							<script>
+
+							Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+							// переключатель минус месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+							}
+							// переключатель плюс месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+							}
+							</script>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						Schedule
+					</div>
+						<a href="http://77.38.183.197/Saraksts" target="_blank"><img src="../img/Saraksts.png" width="140px"" /></img></a>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						<a href="">Up</a>
+					</div>
+					
+				</div>
+
+
+			</aside>
+		</div>
+
+		<footer><a href="http://77.38.183.197/sergej/TT/">© Sergy 2018</a></footer>
+	</section>
+
+
+</body>
+</html>
+
+<!--https://yadi.sk/d/Dnxo3WK83Rikyg-->

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "rus">
+<head>
+	<meta charset="utf-8">
+	<title>Uzdevums №1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" >
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../lib/js/calendar.js"></script>
+
+
+</head>
+<body>
+	<section class="main">
+		<div class="header">
+
+			<a href="./index.html"><img src="../../img/logo.png"> </a>
+			<span>
+				<a href="../../│en/gallery/10.html">ENG</a>
+				<a href="../../│lv/gallery/10.html">LVU</a>
+			</span>
+			<h1>FAQ</h1>
+		</div>
+
+		<nav style="background-color: #C0C0C0;">
+			<ul class="menu1">
+				<li><a href="../">Главная</a></li>
+				<li><a href="../stories/">Истории</a></li>
+				<li><a href="../gallery/">Галерея</a></li>
+				<li><a href="../form/">Анкета</a></li>
+				<li><a href="../contacts/">Контакты</a></li>
+				<li><a href="../faq/">FAQ</a></li>
+			</ul>
+		</nav>
+
+		<div class="MM">
+
+
+			<aside class="sideL">
+
+
+				<div class="titleS">
+					<div>
+						<a href="./">Галереи</a>
+					</div>
+						 <ol>
+						 	<p>
+						   <li><a href="./10.html">Фотогалерея</a>
+						    <ol>
+						     <li> <a href="./11.html">Комбинации</a> </li>
+						     <li> <a href="./12.html">Названия цветов</a> </li>
+						     <li><a href="./13.html">Животные</a></li>
+						     <li><a href="./14.html">Люди</a></li>
+						    </ol>
+						   </li>
+						   </p>	
+						   <p>
+						   <li><a href="./20.html">Видеогалерея</a>
+						    <ol>
+						     <li><a href="./21.html">Музыка</a></li>
+						     <li><a href="./22.html">Прочие</a></li>
+						    </ol>
+						   </li>
+						  </ol>		
+						  </p>			
+				</div>			
+
+				<div class="titleS">
+					<div>
+						Saraksti.tk
+					</div>
+						<a href="http://saraksti.tk/" target="_blank"><img src="../img/reklamaRU.gif" width="180px"" /></img></a>
+					
+				</div>		
+				<div class="titleS">
+					<div>
+						<a href="">Выше</a>
+					</div>
+				</div> 	
+
+
+
+			</aside>
+			<main style="text-align: center;">
+				<h2>Фотографии</h2>
+				<a href="../../gallery/gradient.png" target="_blank"><img src="../../gallery/gradient.png" height="120px"></a>
+				<a href="../../gallery/Grey.jpg" target="_blank"><img src="../../gallery/Grey.jpg" height="120px"></a>
+				<a href="../../gallery/gray.jpg" target="_blank"><img src="../../gallery/gray.jpg" height="120px"></a>
+				<a href="../../gallery/gray2.jpg" target="_blank"><img src="../../gallery/gray2.jpg" height="120px"></a>
+				<a href="../../gallery/Wolf.jpg" target="_blank"><img src="../../gallery/Wolf.jpg" height="120px"></a>
+				<a href="../../gallery/Wolf2.jpg" target="_blank"><img src="../../gallery/Wolf2.jpg" height="120px"></a>
+				<a href="../../gallery/Name.jpg" target="_blank"><img src="../../gallery/Name.jpg" height="120px"></a>
+				<a href="../../gallery/man.jpg" target="_blank"><img src="../../gallery/man.jpg" height="120px"></a>
+
+			</main>
+
+			<aside class="sideR">
+
+				<div class=titleS>
+					<div>
+						Календарь
+					</div>
+							<table id="calendar2">
+							  <thead>
+							    <tr><td>‹<td colspan="5"><td>›
+							    <tr><td>Пон<td>Вто<td>Сре<td>Чет<td>Пят<td>Суб<td>Вос
+							  <tbody>
+							</table>
+
+							<script>
+
+							Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth(),'ru');
+							// переключатель минус месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1,'ru');
+							}
+							// переключатель плюс месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1,'ru');
+							}
+							</script>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						Расписание
+					</div>
+						<a href="http://77.38.183.197/Saraksts" target="_blank"><img src="../../img/Saraksts.png" width="140px"" /></img></a>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						<a href="">Выше</a>
+					</div>
+					
+				</div>
+
+
+			</aside>
+		</div>
+
+		<footer><a href="http://77.38.183.197/sergej/TT/">© Sergy 2018</a></footer>
+	</section>
+
+
+</body>
+</html>
+
+<!--https://yadi.sk/d/Dnxo3WK83Rikyg-->

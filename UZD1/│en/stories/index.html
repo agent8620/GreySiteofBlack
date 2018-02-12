@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+	<meta charset="utf-8">
+	<title>Uzdevums №1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico" >
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../lib/js/calendar.js"></script>
+
+
+</head>
+<body>
+	<section class="main">
+		<div class="header">
+
+			<a href="./index.html"><img src="../../img/logo.png"> </a>
+			<span>
+				<a href="../../│ru/">RUS</a>
+				<a href="../../│lv">LVU</a>
+			</span>
+			<h1>FAQ</h1>
+		</div>
+
+		<nav style="background-color: #C0C0C0;">
+			<ul class="menu1">
+				<li><a href="../">Main</a></li>
+				<li><a href="../stories/">Stories</a></li>
+				<li><a href="../gallery/">Gallery</a></li>
+				<li><a href="../form/">Form</a></li>
+				<li><a href="../contacts/">Contacts</a></li>
+				<li><a href="../faq/">FAQ</a></li>
+			</ul>
+		</nav>
+
+		<div class="MM">
+			<aside class="sideL">
+				<div class="titleS">
+					<div>
+						Saraksti.tk
+					</div>
+						<a href="http://saraksti.tk/" target="_blank"><img src="../img/reklamaEN.gif" width="180px"" /></img></a>
+					
+				</div>		
+				<div class="titleS">
+					<div>
+						<a href="">Up</a>
+					</div>
+				</div> 		
+			</aside>
+			<main>
+				<h2>Color</h2>
+
+						<p><b>Grey (British English) </b>or <b>gray (American English; see spelling differences) </b>is an intermediate color between black and white. It is a neutral or achromatic color, meaning literally that it is a color "without color." It is the color of a cloud-covered sky, of ash and of lead.</p>
+
+					<p>	The first recorded use of <i>grey</i> as a color name in the English language was in AD 700. Grey is the dominant spelling in 	European and Commonwealth English, although <i>gray</i> remained in common usage in the UK until the second half of the 20th century. Gray has been the preferred American spelling since approximately 1825, although grey is an accepted variant.
+					</p>
+					<p>
+						In Europe and the United States, surveys show that grey is the color most commonly associated with neutrality, conformity, boredom, uncertainty, old age, indifference, and modesty. Only one percent of respondents chose it as their favorite color
+					</p>
+				<h2>Name</h2>
+
+				<p><b>Sergey</b> - Common Russian name of one of that country's most beloved saints, known for his kindness and gentility.</p>
+				<p><b>Gray</b> - A common surname, <i>Gray/Grey</i> is still an unusual first name choice--it hasn't made it into the Top 1000 in this century--while longer forms Grayson and Greyson are climbing rapidly, with Grayson at Number 97, and his twin at 200. </p>
+
+			</main>
+			<aside class="sideR">
+
+				<div class=titleS>
+					<div>
+						Calendar
+					</div>
+							<table id="calendar2">
+							  <thead>
+							    <tr><td>‹<td colspan="5"><td>›
+							    <tr><td>Mon<td>Tue<td>Wed<td>Thu<td>Fri<td>Sat<td>Sun
+							  <tbody>
+							</table>
+
+							<script>
+
+							Calendar2("calendar2", new Date().getFullYear(), new Date().getMonth());
+							// переключатель минус месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)-1);
+							}
+							// переключатель плюс месяц
+							document.querySelector('#calendar2 thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
+							  Calendar2("calendar2", document.querySelector('#calendar2 thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar2 thead td:nth-child(2)').dataset.month)+1);
+							}
+							</script>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						Schedule
+					</div>
+						<a href="http://77.38.183.197/Saraksts" target="_blank"><img src="../../img/Saraksts.png" width="140px"" /></img></a>
+					
+				</div>
+
+				<div class="titleS">
+					<div>
+						<a href="">Up</a>
+					</div>
+					
+				</div>
+
+
+			</aside>
+		</div>
+
+		<footer><a href="http://77.38.183.197/sergej/TT/">© Sergy 2018</a></footer>
+	</section>
+
+
+</body>
+</html>
+
+<!--https://yadi.sk/d/Dnxo3WK83Rikyg-->
